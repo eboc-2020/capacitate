@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er ejemplo Ajax</title>
+    <script>
+        function victor() {
+            console.log('Este')
+        }
+        fetch('http://localhost/ajax1.html')
+            .then(Response => Response.json())
+            .then(Response => victor())
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
